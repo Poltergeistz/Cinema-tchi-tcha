@@ -17,7 +17,7 @@ CREATE TABLE ticket (
 
 CREATE TABLE projection (
     idprojection INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    debut DATE,
+    debut DATETIME,
     FKidroom INT REFERENCES room(idroom),
     FKidfilm INT REFERENCES film(idfilm)
 );

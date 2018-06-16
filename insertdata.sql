@@ -46,3 +46,28 @@ VALUES('Hoffman','Jake','1997-09-21');
 
 INSERT client (lastname,firstname,birthdate)
 VALUES('Brown','Francis','1955-01-11');
+
+-- Room --
+
+INSERT room(capacity,equipment)
+VALUES(200,"3D");
+
+INSERT room(capacity)
+VALUES(120);
+
+INSERT room(capacity,equipment)
+VALUES(210,"3D imax");
+
+INSERT room(capacity)
+VALUES(100);
+
+INSERT room(capacity)
+VALUES(90);
+
+INSERT room(capacity,equipment)
+VALUES(180,"3D");
+
+-- Projection --
+
+INSERT projection(debut,FKidroom,FKidfilm)
+VALUES ('2018-05-23 14:30:00',1,1);
