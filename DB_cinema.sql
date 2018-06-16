@@ -37,7 +37,7 @@ CREATE TABLE room (
 
 CREATE TABLE film (
     id INT Not NULL AUTO_INCREMENT,
-    title VARCHAR(45),
+    title VARCHAR(100),
   	director VARCHAR(45),
     genre VARCHAR(45),
   	released INT(4),
