@@ -1,7 +1,7 @@
 CREATE DATABASE cinema;
 
 CREATE TABLE client (
-  id INT Not NULL,
+  id INT Not NULL AUTO_INCREMENT,
   last_name VARCHAR(45),
   first_name VARCHAR(45),
   birthdate DATE,
@@ -10,26 +10,26 @@ CREATE TABLE client (
 );
 
 CREATE TABLE person (
-  id INT Not NULL,
+  id INT Not NULL AUTO_INCREMENT,
   category VARCHAR(45),
   PRIMARY KEY(id)
 );
 
 CREATE TABLE ticket (
-    id INT Not NULL,
+    id INT Not NULL AUTO_INCREMENT,
     price INT,
     seat INT,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE projection (
-    id INT Not NULL,
+    id INT Not NULL AUTO_INCREMENT,
     debut DATE,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE room (
-    id INT Not NULL,
+    id INT Not NULL AUTO_INCREMENT,
     capacity INT,
     equipement VARCHAR(100),
     PRIMARY KEY(id)
