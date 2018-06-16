@@ -28,6 +28,7 @@ INSERT film (title,director,released,genre,duration,synopsis)
 VALUES ('Rocky Balboa','Sylvester Stallone',2006,'Drama', 142, "When he loses a highly publicized virtual boxing match to ex-champ Rocky Balboa, reigning heavyweight titleholder, Mason Dixon retaliates by challenging Rocky to a nationally televised, 10-round exhibition bout. To the surprise of his son and friends, Rocky agrees to come out of retirement and face an opponent who's faster, stronger and thirty years his junior.");
 
 -- Client --
+
 INSERT client (lastname,firstname,birthdate)
 VALUES('Journo','David','1991-04-02');
 
@@ -45,6 +46,12 @@ VALUES('Hoffman','Jake','1997-09-21');
 
 INSERT client (lastname,firstname,birthdate)
 VALUES('Brown','Francis','1955-01-11');
+
+INSERT client (lastname,firstname,birthdate)
+VALUES('Andrea','Tinkerton','1989-05-08')
+
+INSERT client (lastname,firstname,birthdate)
+VALUES('Mila','James','1979-03-04')
 
 -- Room --
 
@@ -70,3 +77,23 @@ VALUES(180,"3D");
 
 INSERT projection(debut,FKidroom,FKidfilm)
 VALUES ('2018-05-23 14:30:00',1,1);
+
+INSERT projection(debut,FKidroom,FKidfilm)
+VALUES ('2018-05-23 16:30:00',2,2);
+
+INSERT projection(debut,FKidroom,FKidfilm)
+VALUES ('2018-05-23 18:30:00',3,3);
+
+INSERT projection(debut,FKidroom,FKidfilm)
+VALUES ('2018-05-23 20:00:00',4,4);
+
+INSERT projection(debut,FKidroom,FKidfilm)
+VALUES ('2018-05-23 21:00:00',5,5);
+
+INSERT projection(debut,FKidroom,FKidfilm)
+VALUES ('2018-05-23 22:00:00',6,6);
+
+-- Ticket --
+
+INSERT ticket(price,seat,FKidclient,FKidprojection)
+VALUES ();
