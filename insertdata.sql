@@ -6,3 +6,13 @@ VALUES ('Brazil','Terry Gilliam',1985,'Dystopia','Jonathan Pryce',142,'A bureauc
 
 INSERT INTO film (title,director,released,genre,duration,synopsis )
 VALUES ('A Land Before Time','Don Bluth',1988,'Animation',69,'An orphaned brontosaurus named Littlefoot sets off in search of the legendary Great Valley. A land of lush vegetation where the dinosaurs can thrive and live in peace. Along the way he meets four other young dinosaurs, each one a different species, and they encounter several obstacles as they learn to work together in order to survive' );
+
+INSERT INTO film (title,director,released,genre,duration,synopsis)
+VALUES ('The Lord Of The Rings : The Fellowship of the Ring','Peter Jackson',2001,'Fantasy',258,
+'Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.' );
+
+INSERT INTO film (title,director,released,genre,duration,synopsis)
+VALUES ('Django Unchained','Quentin Tarantino',2012,'Drama',245,'With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.' );
+
+INSERT INTO film (title,director,released,genre,duration,synopsis)
+VALUES ('The Big Lebowski','Joel Cohen',1998,'Comedy', 157,'Jeffrey "The Dude" Lebowski, a Los Angeles slacker who only wants to bowl and drink white Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.');
