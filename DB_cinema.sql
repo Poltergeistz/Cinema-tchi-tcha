@@ -42,7 +42,7 @@ CREATE TABLE film (
     genre VARCHAR(45),
   	released INT(4),
   	actor VARCHAR(45),
-    duration INT,
+    duration TIME,
     synopsis TEXT(300),
     PRIMARY KEY(id)
 );
