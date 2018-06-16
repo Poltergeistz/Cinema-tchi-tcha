@@ -22,3 +22,6 @@ VALUES ('Jumanji: Bienvenue dans la jungle','Jake Kasdan',2017,'Fantastique, Act
 
 INSERT INTO film (title,director,released,genre,duration,synopsis)
 VALUES ('Flashdance','Adrian Lyne',1983,'Drame, Romance, Musical', 134,"The popular 1980’s dance movie that depicts the life of an exotic dancer with a side job as a welder who true desire is to get into ballet school. It’s her dream to be a professional dancer and now is her chance.…");
+
+INSERT INTO film (title,director,released,genre,duration,synopsis)
+VALUES ('Rocky Balboa','Sylvester Stallone',2006,'Drama', 142,"When he loses a highly publicized virtual boxing match to ex-champ Rocky Balboa, reigning heavyweight titleholder, Mason Dixon retaliates by challenging Rocky to a nationally televised, 10-round exhibition bout. To the surprise of his son and friends, Rocky agrees to come out of retirement and face an opponent who's faster, stronger and thirty years his junior.");
