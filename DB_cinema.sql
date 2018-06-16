@@ -1,52 +1,40 @@
 CREATE DATABASE cinema;
 
 CREATE TABLE client (
-  id INT Not NULL AUTO_INCREMENT,
-  last_name VARCHAR(45),
-  first_name VARCHAR(45),
-  birthdate DATE,
-  id_person INT,
-  PRIMARY KEY(id)
-);
-
-CREATE TABLE person (
-  id INT Not NULL AUTO_INCREMENT,
-  category VARCHAR(45),
-  PRIMARY KEY(id)
+  idclient INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  lastname VARCHAR(45),
+  firstname VARCHAR(45),
+  birthdate DATE
 );
 
 CREATE TABLE ticket (
-    id INT Not NULL AUTO_INCREMENT,
+    idticket INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     price INT,
     seat INT,
-    PRIMARY KEY(id)
+    FKidclient INT REFERENCES client(idclient),
+    FKidprojection INT REFERENCES projection(idprojection)
 );
 
 CREATE TABLE projection (
-    id INT Not NULL AUTO_INCREMENT,
+    idprojection INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     debut DATE,
-    PRIMARY KEY(id)
+    FKidroom INT REFERENCES room(idroom),
+    FKidfilm INT REFERENCES film(idfilm)
 );
 
 CREATE TABLE room (
-    id INT Not NULL AUTO_INCREMENT,
+    idroom INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     capacity INT,
-    equipement VARCHAR(100),
-    PRIMARY KEY(id)
+    equipment VARCHAR(100)
 );
 
 CREATE TABLE film (
-    id INT Not NULL AUTO_INCREMENT,
-    title VARCHAR(100),
-  	director VARCHAR(45),
+    idfilm INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(45),
+    director VARCHAR(45),
     genre VARCHAR(45),
-  	released INT(4),
-  	actor VARCHAR(45),
-    duration TIME,
-    synopsis TEXT(300),
-    PRIMARY KEY(id)
+    released INT(4),
+    actor VARCHAR(45),
+    duration INT,
+    synopsis TEXT(300)
 );
-
-
-ALTER TABLE client 
-ADD CONSTRAINT person_id FOREIGN KEY (id_person) REFERENCES person (id_client);

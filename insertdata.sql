@@ -28,20 +28,20 @@ INSERT film (title,director,released,genre,duration,synopsis)
 VALUES ('Rocky Balboa','Sylvester Stallone',2006,'Drama', 1:42, "When he loses a highly publicized virtual boxing match to ex-champ Rocky Balboa, reigning heavyweight titleholder, Mason Dixon retaliates by challenging Rocky to a nationally televised, 10-round exhibition bout. To the surprise of his son and friends, Rocky agrees to come out of retirement and face an opponent who's faster, stronger and thirty years his junior.");
 
 -- Client --
-INSERT client (last_name,first_name,birthdate,situation)
-VALUES('David','Journo',02/04/1991,'Apprenant');
+INSERT client (lastname,firstname,birthdate)
+VALUES('Journo','David','1991-04-02');
 
-INSERT client (last_name,first_name,birthdate,situation)
-VALUES('Marion',);
+INSERT INTO client (lastname,firstname,birthdate)
+VALUES('Darmandieu','Simon','1989-01-01');
 
-INSERT client (last_name,first_name,birthdate,situation)
-VALUES('Simon',);
+INSERT INTO client (lastname,firstname,birthdate)
+VALUES('Zurcher','Marion','1998-10-28');
 
-INSERT client (last_name,first_name,birthdate,situation)
-VALUES('Hans','Smith',06/15/1985,'Unemployed');
+INSERT client (lastname,firstname,birthdate)
+VALUES('Smith','Hans','1985-06-15');
 
-INSERT client (last_name,first_name,birthdate,situation)
-VALUES('Jake','Hoffman',09/21/1997,'Student');
+INSERT client (lastname,firstname,birthdate)
+VALUES('Hoffman','Jake','1997-09-21');
 
-INSERT client (last_name,first_name,birthdate,situation)
-VALUES('Francis','Brown',01/11/1955,'Retired');
+INSERT client (lastname,firstname,birthdate)
+VALUES('Brown','Francis','1955-01-11');
