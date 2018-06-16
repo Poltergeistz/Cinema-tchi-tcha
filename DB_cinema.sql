@@ -30,7 +30,7 @@ CREATE TABLE room (
 
 CREATE TABLE film (
     idfilm INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(45),
+    title VARCHAR(100),
     director VARCHAR(45),
     genre VARCHAR(45),
     released INT(4),
