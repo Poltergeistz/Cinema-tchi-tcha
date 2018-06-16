@@ -27,7 +27,7 @@ INSERT client (last_name,first_name,birthdate,situation)
 VALUES('Marion',);
 
 INSERT client (last_name,first_name,birthdate,situation)
-VALUES('');
+VALUES('Simon',);
 
 INSERT client (last_name,first_name,birthdate,situation)
 VALUES('Hans','Smith',06/15/1985,'Unemployed');
