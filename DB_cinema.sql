@@ -10,7 +10,7 @@ CREATE TABLE client (
 CREATE TABLE ticket (
     idticket INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     price INT,
-    seat INT,
+    seat INT, -- AUTO_INCREMENT ?
     FKidclient INT REFERENCES client(idclient),
     FKidprojection INT REFERENCES projection(idprojection)
 );
