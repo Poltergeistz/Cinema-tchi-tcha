@@ -36,13 +36,17 @@ CREATE TABLE room (
 );
 
 CREATE TABLE film (
-    id INT Not NULL,
+    id INT Not NULL AUTO_INCREMENT,
     title VARCHAR(45),
+  	director VARCHAR(45),
     genre VARCHAR(45),
+  	released INT(4),
+  	actor VARCHAR(45),
     duration INT,
-    synopsis TEXT(150),
+    synopsis TEXT(300),
     PRIMARY KEY(id)
 );
+
 
 ALTER TABLE client 
 ADD CONSTRAINT person_id FOREIGN KEY (id_person) REFERENCES person (id_client);
