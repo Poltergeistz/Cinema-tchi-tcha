@@ -2,10 +2,10 @@ CREATE DATABASE cinema;
 
 CREATE TABLE client (
   id INT Not NULL AUTO_INCREMENT,
-  last_name VARCHAR(45),
-  first_name VARCHAR(45),
+  lastname VARCHAR(45),
+  firstname VARCHAR(45),
   birthdate DATE,
-  id_person INT,
+  idperson INT,
   PRIMARY KEY(id)
 );
 
