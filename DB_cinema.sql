@@ -43,6 +43,15 @@ CREATE TABLE film (
     PRIMARY KEY(id)
 );
 
+INSERT INTO film (title,director,genre,duration,synopsis)
+--- LOTR '2001' ---
+VALUES ('The Lord Of The Rings : The Fellowship of the Ring', 'Peter Jackson', 'Fantasy', '258', 
+'Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.' );
+--- Django Unchained 2012 ---
+VALUES ('Django Unchained', 'Quentin Tarantino', 'Drama' , '245', 'With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.' );
+--- The Big Lebowski 1998 ---
+VALUES ('The Big Lebowski', 'Joel Cohen', 'Comedy', '157', 'Jeffrey "The Dude" Lebowski, a Los Angeles slacker who only wants to bowl and drink white Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.');
+
 ALTER TABLE client 
 ADD CONSTRAINT person_id FOREIGN KEY (id_person) REFERENCES person (id_client);
 
