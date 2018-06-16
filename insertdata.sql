@@ -48,10 +48,10 @@ INSERT client (lastname,firstname,birthdate)
 VALUES('Brown','Francis','1955-01-11');
 
 INSERT client (lastname,firstname,birthdate)
-VALUES('Andrea','Tinkerton','1989-05-08')
+VALUES('Andrea','Tinkerton','1989-05-08');
 
 INSERT client (lastname,firstname,birthdate)
-VALUES('Mila','James','1979-03-04')
+VALUES('Mila','James','1979-03-04');
 
 -- Room --
 
