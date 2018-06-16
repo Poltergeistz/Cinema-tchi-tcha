@@ -50,7 +50,3 @@ CREATE TABLE film (
 
 ALTER TABLE client 
 ADD CONSTRAINT person_id FOREIGN KEY (id_person) REFERENCES person (id_client);
-
---- VISUALISER CLIENT ---
--- DESCRIBE client; --
-
