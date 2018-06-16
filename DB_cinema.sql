@@ -1,4 +1,5 @@
 CREATE DATABASE cinema;
+
 CREATE TABLE client (
   id INT Not NULL,
   last_name VARCHAR(45),
