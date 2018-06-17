@@ -121,4 +121,13 @@ VALUES
 -- Ticket --
 
 INSERT ticket(price,seat,FKidclient,FKidprojection)
-VALUES ();
+VALUES 
+(10,1,1,1,1),
+(10,2,1,2,1),
+(10,3,1,3,1),
+(10,4,1,4,1),
+(10,5,1,5,1),
+(10,6,1,6,1),
+(10,7,1,7,1),
+(10,8,1,8,1);
+
