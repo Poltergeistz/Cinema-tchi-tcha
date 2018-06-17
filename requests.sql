@@ -24,6 +24,11 @@ LEFT JOIN projection ON FKidprojection = idprojection
 WHERE WEEK(debut) <= WEEK(current_date()) 
 	AND WEEK(debut) >= WEEK(current_date())-1
 
---- savoir si une salle est pleine
+--- savoir si une salle est pleine (plus de reservation possible)
+SELECT idroom
+FROM ticket 
+LEFT JOIN projection ON FKidprojection = idprojection
+LEFT JOIN room ON FKidroom = idroom
+WHERE seat = capacity;
 
 
